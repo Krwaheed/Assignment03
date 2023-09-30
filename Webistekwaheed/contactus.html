@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <!-- Responsive design settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the browser tab -->
+    <title>Bean Bliss Café - Contact Us</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Site Header -->
+    <header>
+        <!-- Cafe Logo -->
+        <img src="cover pic.png" alt="Bean Bliss Café Logo" id="logo">
+        
+        <!-- Site Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Image Banner -->
+        <section id="banner">
+            <img src="Bean Bliss Cafe (3).png" alt="Bean Bliss Café's storefront">
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form">
+            <h1>TALK TO US</h1>
+            <!-- Form submission endpoint is "/submit_form.php" using POST method -->
+            <form action="/submit_form.php" method="post">
+                <!-- Name Input Field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <!-- Email Input Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <!-- Message Textarea -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <!-- Submit Button -->
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+        <!-- Address and Map Details -->
+        <section id="address-details">
+            <!-- Address Heading -->
+            <h2>Our Address</h2>
+            <!-- Address Details -->
+            <address>
+                1234 Spring garden, Greensboro  NC1234<br>
+            </address>
+            
+            <!-- Location Map -->
+            <img src="map.png" alt="Map showing location of Bean Bliss Café">
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer>
+        <!-- Social Media Call-to-action -->
+        <p>Follow us on social media</p>
+        <!-- Brand Mention -->
+        beanblisscafe
+        
+        <!-- Copyright and Image Credits -->
+        <p>&copy; 2023 Bean Bliss Café | Images sourced from [Canva, Freepik]</p>
+    </footer>
+
+</body>
+
+</html>

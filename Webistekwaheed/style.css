@@ -1,0 +1,133 @@
+
+
+/* Global Styles */
+/* Resetting default margins and paddings for some HTML elements */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Link styling */
+a {
+    text-decoration: none; /* Removes underlines from links */
+    color: #333;
+}
+
+/* Set a fixed width container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers container */
+    padding: 0 20px; /* Padding on left and right for some spacing */
+}
+
+/* Header Styles */
+/* Background for header with a slight shadow */
+.header-background {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+#logo {
+    max-width: 200px;
+    margin: 10px 0;
+}
+
+/* Styling for navigation menu */
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    display: flex; /* Horizontal alignment */
+    justify-content: space-around; /* Distribute menu items evenly */
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+/* Link styles for navigation */
+nav a {
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #ddd;
+}
+
+/* Active link styles for navigation */
+nav a.active {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Main Content Styles */
+/* Banner image styling */
+#banner img {
+    width: 100%; /* Takes full width of its container */
+    border-radius: 4px;
+}
+
+/* Introduction section styling */
+#introduction {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#introduction h1 {
+    margin-bottom: 20px;
+}
+
+/* News section styling */
+#news {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+#news article {
+    flex: 1; /* Equal width for all articles */
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#news img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #555;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Design for smaller screens */
+/* Styles that apply when the screen width is 768px or less */
+@media screen and (max-width: 768px) {
+    /* Changes layout of news section to vertical */
+    #news {
+        flex-direction: column;
+    }
+
+    #news article {
+        margin: 20px 0;
+    }
+}
